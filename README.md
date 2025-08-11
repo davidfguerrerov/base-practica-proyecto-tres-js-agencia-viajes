@@ -39,8 +39,7 @@ Este proyecto es una aplicación web interactiva desarrollada en **JavaScript** 
 
 ---
 
-## ⚙️ Cómo funciona
-### 📦
+## 🫵 Cómo funciona
 1. El archivo `ciudades.js` contiene la información de cada destino en formato de objeto (`titulo`, `subtitulo`, `parrafo`, `precio`).
 2. Al hacer clic en el enlace de una ciudad, un **evento JavaScript** captura la selección.
 3. La función `obtenerContenido` busca la información correspondiente y actualiza el contenido de la página.
