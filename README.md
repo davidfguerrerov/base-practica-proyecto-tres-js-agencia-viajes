@@ -40,16 +40,16 @@ Este proyecto es una aplicación web interactiva desarrollada en **JavaScript** 
 ---
 
 ## 🫵 Cómo funciona
-1. El archivo `ciudades.js` contiene la información de cada destino en formato de objeto (`titulo`, `subtitulo`, `parrafo`, `precio`).
+1. El archivo `ciudades.js` contiene la información de cada destino en formato de objeto (`titulo`, `subtitulo`, `descripcion`).
 2. Al hacer clic en el enlace de una ciudad, un **evento JavaScript** captura la selección.
-3. La función `obtenerContenido` busca la información correspondiente y actualiza el contenido de la página.
-4. Se resalta el destino seleccionado con una clase `active` para mejorar la experiencia visual.
+3. La función `obtenerData` busca la información correspondiente y actualiza el contenido de la página.
+4. Se resalta el destino seleccionado con una clase `activo` para mejorar la experiencia visual.
 
 El código JavaScript se encarga de **actualizar dinámicamente** la información de la página cuando el usuario selecciona una ciudad colombiana desde el menú de enlaces.
 
 ### 📥 Importación de datos de las ciudades
 
-Los datos de ciudades como **Bogotá**, **Medellín**, **Cartagena** y **Cali** se importan desde el archivo `ciudades.js`, el cual contiene la información estructurada de cada destino turístico.
+Los datos de ciudades como **Cartagena**, **Santa Marta**, **Medellín** y **San andrés** se importan desde el archivo `ciudades.js`, el cual contiene la información estructurada de cada destino turístico.
 Es importante asegurarse de que este archivo esté disponible en el repositorio junto con el resto del código.
 
 ### 🔍 Obtención de elementos del DOM
@@ -58,19 +58,18 @@ Se utiliza el método `document.getElementById` para acceder a los elementos HTM
 Estos elementos se guardan en variables como:
 
 - **`enlaces`**: colección de todos los enlaces (`<a>`) de la página.
-- **`tituloElemento`**: etiqueta `<h1>` que muestra el nombre de la ciudad.
-- **`subTituloElemento`**: etiqueta `<h2>` para el subtítulo de la ciudad.
-- **`parrafoElemento`**: etiqueta `<p>` donde se despliega la descripción turística.
-- **`precioElemento`**: sección donde se muestra el precio o tarifa asociada al viaje.
+- **`titulo`**: etiqueta `<h1>` que muestra el nombre de la ciudad.
+- **`subTitulo`**: etiqueta `<h2>` para el subtítulo de la ciudad.
+- **`descripcion`**: etiqueta `<p>` donde se despliega la descripción turística.
 
 ### 🖱️ Eventos `click` en los enlaces
 
 Mediante un bucle `forEach`, se agrega un evento `click` a cada enlace de ciudad.
 Cuando el usuario hace clic, el código ejecuta las siguientes acciones:
 
-1. Elimina la clase `active` de todos los enlaces.
-2. Asigna la clase `active` al enlace seleccionado.
-3. Obtiene la información de la ciudad mediante la función `obtenerContenido`, usando el texto del enlace como referencia.
+1. Elimina la clase `activo` de todos los enlaces.
+2. Asigna la clase `activo` al enlace seleccionado.
+3. Obtiene la información de la ciudad mediante la función `obtenerData`, usando el texto del enlace como referencia.
 4. Actualiza el contenido del DOM con los datos de la ciudad elegida.
 
 ---

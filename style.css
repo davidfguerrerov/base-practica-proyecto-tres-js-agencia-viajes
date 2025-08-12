@@ -21,12 +21,12 @@ li a {
     text-decoration: none;
 }
 
-li a.active {
+li a.activo {
     background-color: #949e05;
     color: white;
 }
 
-li a:hover:not(.active) {
+li a:hover:not(.activo) {
     background-color: #555;
     color: white;
 }
